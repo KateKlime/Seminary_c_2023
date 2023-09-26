@@ -8,5 +8,5 @@ int N = new Random().Next(100,1000);
 Console.WriteLine($"случайное число: {N}");
 int digitFirst = N/100;
 int digitThird = N%10;
-Console.Write(digitFirst);
-Console.Write(digitThird);
+int nov = digitFirst*10 + digitThird;
+Console.WriteLine(nov);
