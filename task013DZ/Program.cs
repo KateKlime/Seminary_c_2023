@@ -11,16 +11,7 @@ if (Num < 100)
 }
 else
 {
-    if (Num > 999)
-    {
-        while(Num > 999)
-        {
-            Num = Num / 10;
-        }
-    }
-    else
-    {
-        int thirdnum = Num % 10;
-        Console.WriteLine(thirdnum);
-    }
+    while(Num > 999) Num = Num / 10;
+    int thirdnum = Num % 10;
+    Console.WriteLine(thirdnum);
 }
