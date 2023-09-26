@@ -4,9 +4,9 @@
 // 782 -> 72
 // 918 -> 98
 
-int N = new Random().Next(100,1000);
-Console.WriteLine($"случайное число: {N}");
-int digitFirst = N/100;
-int digitThird = N%10;
-int nov = digitFirst*10 + digitThird;
-Console.WriteLine(nov);
+int N = new Random().Next(100, 1000);
+Console.WriteLine("случайное число " + N); // == Console.WriteLine($"случайное число: {N}");
+int F1 = N / 100;//первая цифра 428/100 = 4целых - 28/100
+int F3 = N % 10;//третья цифра 428%10 - 42целых - 8/10
+int Nov = F1 * 10 + F3; // 4*10 + 8 = 48
+Console.WriteLine(Nov);
